@@ -18,14 +18,11 @@ function calculate() {
     try {
         let expression = display.value;
         
-        // Ganti simbol untuk perhitungan
         expression = expression.replace(/×/g, '*');
         expression = expression.replace(/÷/g, '/');
         
-        // Evaluasi ekspresi matematika
         let result = eval(expression);
         
-        // Tambahkan ke riwayat
         addToHistory(expression + ' = ' + result);
         
         display.value = result;
@@ -152,7 +149,6 @@ function updateHistoryDisplay() {
     });
 }
 
-// Support keyboard input
 document.addEventListener('keydown', function(event) {
     const key = event.key;
     
