@@ -119,7 +119,6 @@ button:active {
     font-size: 0.9em;
 }
 
-/* Responsive Design */
 @media (max-width: 480px) {
     .calculator {
         padding: 15px;
